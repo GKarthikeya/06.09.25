@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flask-selenium-scraper
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: IARE_USERNAME
+        sync: false
+      - key: IARE_PASSWORD
+        sync: false
